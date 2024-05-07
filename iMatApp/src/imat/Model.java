@@ -26,7 +26,7 @@ public class Model {
         }
         return instance;
     }
-
+  // test
     private void init() {
         iMatDataHandler = IMatDataHandler.getInstance();
     }
