@@ -19,10 +19,20 @@
       -fx-font-weight: regular;
 }
 .logo-font{
-    -fx-font-size: 40px;
+    -fx-font-size: 50px;
     -fx-font-family: "Josefin Sans";
-    -fx-font-weight: bold italic;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
 }
+
+.categories-font {
+    -fx-font-size: 20px;
+    -fx-font-family: "Josefin Sans";
+    -fx-font-weight: normal;
+    -fx-font-style: italic;
+    -fx-underline: true;
+}
+
 .price-marker{
     -fx-background-color: "9FC68F";
 }

@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="1066.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1523.0" stylesheets="@imat_app.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imat.MainViewController">
    <children>
-      <ScrollPane prefHeight="2100.0" prefWidth="1000.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-        </content>
-      </ScrollPane>
-      <Label layoutX="306.0" layoutY="147.0" prefHeight="17.0" prefWidth="389.0" text="Sökväg till mappen där programmet hämtar och sparar data:" />
-      <Label fx:id="pathLabel" alignment="CENTER" layoutX="115.0" layoutY="190.0" prefHeight="17.0" prefWidth="771.0" styleClass="text-sample" text="Label" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="114.0" />
-      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="14.0">
-         <image>
-            <Image url="@resources/logo.png" />
-         </image>
-      </ImageView>
-      <AnchorPane fx:id="productArea" layoutY="216.0" prefHeight="218.0" prefWidth="1000.0" />
-      <AnchorPane prefHeight="2100.0" prefWidth="1000.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane id="header" prefHeight="80.0" style="-fx-background-color: #00DD00;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <AnchorPane prefHeight="80.0" prefWidth="654.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutY="6.0" styleClass="logo-font" text="iMat" AnchorPane.leftAnchor="20.0">
+                                 <font>
+                                    <Font name="Cambria Italic" size="50.0" />
+                                 </font>
+                              </Label>
+                              <BorderPane layoutX="454.0" layoutY="20.0" prefHeight="40.0" prefWidth="481.0" AnchorPane.rightAnchor="0.0">
+                                 <left>
+                                    <Pane prefWidth="40.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <center>
+                                    <TextField prefHeight="40.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </left>
+                     <right>
+                        <AnchorPane prefHeight="80.0" prefWidth="342.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="14.0" layoutY="27.0" styleClass="categories-font" text="Kategorier" />
+                           </children>
+                        </AnchorPane>
+                     </right>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane maxHeight="1.7976931348623157E308" minHeight="-Infinity" style="-fx-background-color: #FF0000;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
    </children>
 </AnchorPane>
