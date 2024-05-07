@@ -26,16 +26,7 @@ public class MainViewController implements Initializable {
         pathLabel.setText(iMatDirectory);
 
         Product product = new Product();
-        for (Product i : product()) {
-            ProductModule productModule = null;
-            try {
-                productModule = new ProductModule(i);
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
-
+        ProductModule productModule = null;
     }
 
 }
